@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 
 function connect() {
     try {
+        console.log(`${process.env.MONGO_DB}`)
         mongoose.connect(process.env.MONGO_DB);
         console.log('mongodb connected successfully.')
     } catch (err) {
