@@ -12,5 +12,5 @@ db.connect();
 
 server.use('/', routes);
 
-server.listen(PORT);
+server.listen(PORT || 3005);
 console.log('Server is on');
