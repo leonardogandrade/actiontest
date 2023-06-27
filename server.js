@@ -1,7 +1,7 @@
 const express = require('express');
 const server = express();
 const requireDir = require('require-dir');
-requireDir('./src/models')
+// requireDir('./src/models')
 require('dotenv').config();
 const db = require('./src/database/connection')
 const routes = require('./src/routes');
