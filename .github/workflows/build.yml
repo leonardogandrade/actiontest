@@ -6,8 +6,8 @@ jobs:
     steps:
       - name: create env file
         run: |
-          touch .env
-          echo MONGO_DB=${{ vars.MONGO_DB }} >> .env
+          touch ../env
+          echo MONGO_DB=${{ vars.MONGO_DB }} >> ../env
       - run: node --version
       - run: npm --version
       - uses: actions/checkout@v3
