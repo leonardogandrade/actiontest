@@ -11,8 +11,9 @@ module.exports = {
             msg: 'user created successfully'
         })
     },
-    getAll(req, res) {
-
+    async getAll(req, res) {
+        const result = await User.find();
+        res.json(result)
     },
     removeOne(req, res) {
 

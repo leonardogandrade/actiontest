@@ -6,5 +6,6 @@ const welcome = require('./controller/welcome');
 
 routes.get('/', welcome.greeting);
 routes.post('/users', usersController.create);
+routes.get('/users', usersController.getAll);
 
 module.exports = routes;
