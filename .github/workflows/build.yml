@@ -7,7 +7,7 @@ jobs:
       - name: create env file
         run: |
           touch .env
-          echo MONGO_DB="mongodb+srv://" + ${{ secrets.MONGO_USER }} + :${{ secrets.MONGO_PWD }} + "@cluster0.czex64t.mongodb.net/actionsdb?retryWrites=true&w=majority" >> .env
+          echo MONGO_DB=${{ vars.MONGO_DB }} >> .env
       - run: node --version
       - run: npm --version
       - uses: actions/checkout@v3
