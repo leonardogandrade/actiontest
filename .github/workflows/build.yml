@@ -4,6 +4,10 @@ jobs:
     runs-on: ubuntu-latest
     container: node:16
     steps:
+      - name: create env file
+        run: |
+          touch .env
+          echo MONGO_DB=${{ env.MONGO_DB }} >> .env
       - run: node --version
       - run: npm --version
       - uses: actions/checkout@v3
