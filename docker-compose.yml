@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  app:
+    container_name: setup-nodejs
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/src/app
+    environment:
+      - PORT=3009
+    ports:
+      - 3009:3009
