@@ -1,5 +1,5 @@
 FROM node:16-slim as BUILDER
-LABEL maintainer="Leonardo Gerheim"
+LABEL maintainer="Leonardo Gerheim de Andrade"
 
 WORKDIR /usr/src/app
 
