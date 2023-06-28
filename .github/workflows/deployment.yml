@@ -21,7 +21,7 @@ jobs:
       - run: npm run test
   deploy-test:
     needs: test-ci
-    if: github.ref == 'refs/heads/develop'
+    if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-20.04
     concurrency: deploy-to-test
     environment: test
