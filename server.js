@@ -15,4 +15,4 @@ db.connect();
 server.use('/', routes);
 
 server.listen(PORT);
-console.log('Server is on');
+console.log('Server is online');
